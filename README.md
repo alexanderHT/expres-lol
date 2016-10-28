@@ -2,7 +2,7 @@
 
 ##  Setup
 ```
-### npm install
+npm install
 ```
 ### Usage
 ```
