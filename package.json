@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/alexanderHT/expres-lol/issues"
   },
-  "homepage": "https://github.com/alexanderHT/expres-lol#readme"
+  "homepage": "https://github.com/alexanderHT/expres-lol#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
 }
