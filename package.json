@@ -1,0 +1,22 @@
+{
+  "name": "express-lol",
+  "version": "1.0.0",
+  "description": "belajar express",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/alexanderHT/expres-lol.git"
+  },
+  "keywords": [
+    "belajar"
+  ],
+  "author": "alexander",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexanderHT/expres-lol/issues"
+  },
+  "homepage": "https://github.com/alexanderHT/expres-lol#readme"
+}
