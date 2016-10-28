@@ -31,6 +31,41 @@ router.get('/books', function(req, res){
   res.send(books)
 })
 
+router.get('/books/:id', function(req, res){
+  // req.body.id >>> /data + { id: 0 }
+  // req.params.id >>> /data
+  // req.query >>> /data?q={id}
+  // req.param('id') >>>
+  let book = books.filter(function(book){
+    return book.id === Number(req.params.id)
+  })[0] // [0] di belakang fungsinya untuk mengembalikan data bukan array
+
+  if(!book) res.status(404).json({ 'msg': "book no found" })
+
+  res.send(book)
+})
+
+// deleted
+router.delete('/books/:id', function(req, res){
+  const book = books.filter(function(book){
+    return book.id === Number(req.params.id)
+  })[0]
+
+  // send 404 Error massage
+  if(!book) res.status(404).json({ 'msg': "book no found" })
+
+  // deleted the book from array
+  books.splice(books.indexOf(book), 1)
+
+  // response
+  res.json({ 'message': `Book ${id} has been deleted` })
+})
+
+// put method
+router.put('/books/:id', function(req, res){
+// nanti copy dari repo git hidar
+})
+
 // register router
 app. use('/', router)
 
